@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -10,62 +10,73 @@
     <title>Weather App</title>
 </head>
 
-<body class="dia p-4 ">
+<body class="dia p-4 pb-0 ">
+    <header class="flex items-center justify-center">
+        <h1 class="text-4xl font-bold text-white p-4">Weather App</h1>
+    </header>
 
-    <main class="flex items-center justify-center mt-10">
-        <div class="flex flex-col items-center space-y-5">
-            <div class="flex space-x-3">
-                <input type="text" placeholder="Buscar cidade..." class="px-4 py-2 rounded-md text-gray-700">
-                <button class="buscar px-4 py-2 bg-blue-500 text-white rounded-md">Search</button>
+    <main class="flex flex-col space-y-6  justify-center mt-10">
+        <section class="flex flex-col items-center  ">
+            <div class="flex w-full">
+                <input type="text" placeholder="Buscar cidade..."
+                    class="w-full text-black px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <button class="buscar px-4 py-2 bg-blue-600 text-white rounded-r-md hover:bg-blue-700">Search</button>
             </div>
+        </section>
 
-            <span class="cidade text-3xl font-bold"></span>
+        <div>
+            <H2 class="cidade text-2xl font-bold">--</H2>
+            <p class="data">--</p>
+        </div>
 
-            <div class="bg-blue-500 flex flex-row items-center space-x-3 w-80 h-36 justify-around rounded-3xl ">
+        <section class="flex flex-col items-center space-y-6 size-full  justify-center rounded-3xl ">
+
+            <div class="flex flex-row space-x-3 items-center">
                 <img id="icone-clima" src="nuvens.png" alt="imagem clima" class="w-20 h-20">
 
-                <div class="flex flex-col items-center space-y-2 ">
+                <div class="flex flex-col items-center space-y-2">
                     <span class="temperatura text-4xl font-bold">--</span>
-                    <span class="descricao">Bem-Vindo</span>
+                    
                 </div>
             </div>
 
 
-            <div class="flex gap-3 flex-wrap justify-center">
+            <div class="flex gap-2 flex-wrap justify-center align-center flex-col ">
 
-                <div id="extra-Info" class="bg-gray-200 w-36 h-14 flex items-center justify-start p-2 space-x-2 text-black rounded-md">
-                    <i class="fas fa-temperature-high text-red-900"></i>
-                    <div class="flex flex-col">
-                        <span class="temperatura-Maxima text-sm font-bold text-red-900">Temp.Max</span>
-                        <span class="temp-max"></span>
+                <span class="descricao text-2xl font-bold text-center">Bem-Vindo</span>
+
+                
+                <div class="flex flex-row space-x-5 justify-center">
+
+                    <div class="extra-Info ">
+                        <i class="fas fa-wind"></i>
+                        <span class="veloc-vento">--</span>
                     </div>
+
+                    <div class="extra-Info">
+                        <i class="fas fa-tint "></i>
+                        <span class="umi">--</span>
+                    </div>
+
                 </div>
 
-                <div id="extra-Info" class="bg-gray-200 w-36 h-14 flex items-center justify-start p-2 space-x-2 text-black rounded-md ">
-                    <i class="fas fa-temperature-low text-blue-900"></i>
-                    <div class="flex flex-col">
-                        <span class="temperatura-Minima text-sm font-bold text-blue-900 ">Temp-min</span>
-                        <span class="temp-min"></span>
-                    </div>
-                </div>
-
-                <div id="extra-Info" class="bg-gray-200 w-36 h-14 flex items-center justify-start p-2 space-x-2 text-gray-700 rounded-md">
-                    <i class="fas fa-wind"></i>
-                    <div class="flex flex-col">
-                        <span class="vento">Vento</span>
-                        <span class="veloc-vento"></span>
-                    </div>
-                </div>
-
-                <div id="extra-Info" class="bg-gray-200 w-36 h-14 flex items-center justify-start p-2 space-x-2 text-blue-400 rounded-md">
-                    <i class="fas fa-tint "></i>
-                    <div class="flex flex-col">
-                        <span class="umidade ">umidade</span>
-                        <span class="umi"></span>
-                    </div>
-                </div>
             </div>
-        </div>
+
+           
+
+
+        </section>
+
+        <section class="bg-blue-200 w-full h-20 p-2">
+            <p class="aviso text-white font-bold text-xl text-center m-auto"></p>
+        </section>
+
+        
+        <section>
+
+        </section>
+
+
     </main>
 
 </body>
