@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+
+<body class="dia p-4 ">
+
+    <main class="flex items-center justify-center mt-10">
+        <div class="flex flex-col items-center space-y-5">
+            <div class="flex space-x-3">
+                <input type="text" placeholder="Buscar cidade..." class="px-4 py-2 rounded-md text-gray-700">
+                <button class="buscar px-4 py-2 bg-blue-500 text-white rounded-md">Search</button>
+            </div>
+
+            <span class="cidade text-3xl font-bold"></span>
+
+            <div class="bg-blue-500 flex flex-row items-center space-x-3 w-80 h-36 justify-around rounded-3xl ">
+                <img id="icone-clima" src="nuvens.png" alt="imagem clima" class="w-20 h-20">
+
+                <div class="flex flex-col items-center space-y-2 ">
+                    <span class="temperatura text-4xl font-bold">--</span>
+                    <span class="descricao">Bem-Vindo</span>
+                </div>
+            </div>
+
+
+            <div class="flex gap-3 flex-wrap justify-center">
+
+                <div id="extra-Info" class="bg-gray-200 w-36 h-14 flex items-center justify-start p-2 space-x-2 text-black rounded-md">
+                    <i class="fas fa-temperature-high text-red-900"></i>
+                    <div class="flex flex-col">
+                        <span class="temperatura-Maxima text-sm font-bold text-red-900">Temp.Max</span>
+                        <span class="temp-max"></span>
+                    </div>
+                </div>
+
+                <div id="extra-Info" class="bg-gray-200 w-36 h-14 flex items-center justify-start p-2 space-x-2 text-black rounded-md ">
+                    <i class="fas fa-temperature-low text-blue-900"></i>
+                    <div class="flex flex-col">
+                        <span class="temperatura-Minima text-sm font-bold text-blue-900 ">Temp-min</span>
+                        <span class="temp-min"></span>
+                    </div>
+                </div>
+
+                <div id="extra-Info" class="bg-gray-200 w-36 h-14 flex items-center justify-start p-2 space-x-2 text-gray-700 rounded-md">
+                    <i class="fas fa-wind"></i>
+                    <div class="flex flex-col">
+                        <span class="vento">Vento</span>
+                        <span class="veloc-vento"></span>
+                    </div>
+                </div>
+
+                <div id="extra-Info" class="bg-gray-200 w-36 h-14 flex items-center justify-start p-2 space-x-2 text-blue-400 rounded-md">
+                    <i class="fas fa-tint "></i>
+                    <div class="flex flex-col">
+                        <span class="umidade ">umidade</span>
+                        <span class="umi"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+<script src="script.js"></script>
+
+</html>
