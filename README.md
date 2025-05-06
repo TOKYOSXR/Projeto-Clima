@@ -1,6 +1,7 @@
 # ☀️ Weather Now - App de Clima
 
-Aplicativo simples feito com HTML, CSS e JavaScript que permite ao usuário buscar o clima atual e a previsão para os próximos 3 dias de qualquer cidade, usando o nome da cidade e a sigla do país (ex: `São Paulo`).
+Aplicativo simples feito com HTML, CSS e JavaScript que permite ao usuário buscar o clima atual e a previsão para os próximos 3 dias de qualquer cidade, usando o nome da cidade
+(ex: `São Paulo`).
 
 ---
 
@@ -45,19 +46,8 @@ https://api.open-meteor.com/city/{cidade}/sun
 
 - Interface clean e intuitiva.
 - Design responsivo (Mobile e Desktop).
-- Cores adaptadas ao clima (ex: fundo azul para chuva, laranja para sol).
 - Tema claro ou escuro dependendo da hora do dia da cidade.
 - Fonte recomendada: **"Poppins"** ou **"Roboto"** (Google Fonts).
-
----
-
-## 🎨 Cores sugeridas
-
-- ☀️ Ensolarado: `#FFD700` (dourado)
-- 🌧️ Chuvoso: `#4A90E2` (azul escuro)
-- ☁️ Nublado: `#B0BEC5` (cinza claro)
-- 🌫️ Neblina: `#90A4AE` (cinza azulado)
-- 🌙 Noite limpa: `#2C3E50`
 
 ---
 
