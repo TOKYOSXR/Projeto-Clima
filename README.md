@@ -1,12 +1,12 @@
 # ☀️ Weather Now - App de Clima
 
-Aplicativo simples feito com HTML, CSS e JavaScript que permite ao usuário buscar o clima atual e a previsão para os próximos 3 dias de qualquer cidade, usando o nome da cidade e a sigla do país (ex: `São Paulo, BR`).
+Aplicativo simples feito com HTML, CSS e JavaScript que permite ao usuário buscar o clima atual e a previsão para os próximos 3 dias de qualquer cidade, usando o nome da cidade e a sigla do país (ex: `São Paulo`).
 
 ---
 
 ## 🧠 Funcionalidades
 
-- 🔎 Busca por cidade + país (ex: `Lisboa, PT`).
+- 🔎 Busca por cidade + país (ex: `Lisboa`).
 - 📅 Exibe a data atual da consulta.
 - 🌡️ Mostra a temperatura atual.
 - 🌥️ Ícone representando o clima (ensolarado, nublado, chuva, etc).
